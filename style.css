@@ -1,0 +1,241 @@
+.body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #e9ecef;
+}
+
+
+.card-container{
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.container-header{
+    background-color: #0F6B5F;
+    color: white;
+    padding: 20px;
+}
+
+.container-body{
+    background-color: white;
+    padding: 20px;
+}
+
+
+.pill{
+    display: inline-flex;
+    gap: 24px;
+    margin-bottom: 20px;
+    background-color: #e9ecef;
+    border-radius: 50px;
+}
+
+.pill-content{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    font-weight: 600;
+    color: #0F6B5F;
+}
+
+.pill-content input[type = "radio"]{
+    display: none;
+}
+
+
+.pill-content input[type = "radio"]:checked + span {
+    background-color: #0F6B5F;
+    color: white;
+    border-radius: 50px;
+      padding: 20px;
+
+}
+
+.form-row{
+    display:flex;
+    gap: 24px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #16302B;    
+  font-size: 0.9rem;
+}
+
+
+.form-group input {
+  padding: 12px 16px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 35px;
+}
+
+.phone-input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #f4f6f5;
+  border: 1px solid #dcdfdc;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.phone-input-wrapper .country-code {
+  background-color: #0F6B5F;
+  color: #ffffff;
+  padding: 12px 14px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 10px 0 0 10px;
+}
+
+.phone-input-wrapper input {
+  border: none;
+  background: transparent;
+  padding: 12px 14px;
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  color: #16302B;
+}
+
+.form-group input[type="email"] {
+  background-color: #f4f6f5;
+  border: 1px solid #dcdfdc;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  color: #16302B;
+}
+
+.options-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.option-label {
+  font-size: 0.9rem;
+  color: #16302B;
+  font-weight: 500;
+}
+
+.toggle-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.slider {
+  width: 36px;
+  height: 20px;
+  background-color: #e0e0e0;
+  border: 1.5px solid #b0b0b0;
+  border-radius: 20px;
+  position: relative;
+  transition: background-color 0.2s ease;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #888888;
+  top: 2.5px;
+  left: 3px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.toggle-switch input:checked + .slider {
+  background-color: #0F6B5F;
+  border-color: #0F6B5F;
+}
+
+.toggle-switch input:checked + .slider::before {
+  transform: translateX(15px);
+  background-color: #ffffff;
+}
+
+.checkbox-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.checkbox-option input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #0F6B5F;
+  cursor: pointer;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.btn-clear {
+  background-color: transparent;
+  color: #16302B;
+  border: 1.5px solid #16302B;
+  border-radius: 25px;
+  padding: 10px 28px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-clear:hover {
+  background-color: rgba(22, 48, 43, 0.05);
+}
+
+.btn-submit {
+  background-color: #F2A93B;
+  color: #16302B;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 28px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-submit:hover {
+  background-color: #e0982d;
+}
+
+
+
